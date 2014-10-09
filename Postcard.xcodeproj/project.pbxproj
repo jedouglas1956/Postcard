@@ -13,6 +13,8 @@
 		C444646A19CE419800BDDE9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C444646919CE419800BDDE9E /* Images.xcassets */; };
 		C444646D19CE419800BDDE9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C444646B19CE419800BDDE9E /* LaunchScreen.xib */; };
 		C444647919CE419800BDDE9E /* PostcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444647819CE419800BDDE9E /* PostcardTests.swift */; };
+		C444648319CE53C600BDDE9E /* 3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C444648219CE53C600BDDE9E /* 3.JPG */; };
+		C444648719CE5DFA00BDDE9E /* Stamp in Resources */ = {isa = PBXBuildFile; fileRef = C444648619CE5DFA00BDDE9E /* Stamp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		C444647219CE419800BDDE9E /* PostcardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostcardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C444647719CE419800BDDE9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C444647819CE419800BDDE9E /* PostcardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardTests.swift; sourceTree = "<group>"; };
+		C444648219CE53C600BDDE9E /* 3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.JPG; sourceTree = "<group>"; };
+		C444648619CE5DFA00BDDE9E /* Stamp */ = {isa = PBXFileReference; explicitFileType = image.jpeg; path = Stamp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		C444646019CE419800BDDE9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C444648619CE5DFA00BDDE9E /* Stamp */,
+				C444648219CE53C600BDDE9E /* 3.JPG */,
 				C444646119CE419800BDDE9E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +167,7 @@
 				TargetAttributes = {
 					C444645C19CE419800BDDE9E = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = BQ9L3E46BX;
 					};
 					C444647119CE419800BDDE9E = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -193,8 +200,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C444646819CE419800BDDE9E /* Main.storyboard in Resources */,
+				C444648719CE5DFA00BDDE9E /* Stamp in Resources */,
 				C444646D19CE419800BDDE9E /* LaunchScreen.xib in Resources */,
 				C444646A19CE419800BDDE9E /* Images.xcassets in Resources */,
+				C444648319CE53C600BDDE9E /* 3.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +345,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Postcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -346,9 +359,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Postcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -405,6 +422,7 @@
 				C444647E19CE419800BDDE9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C444647F19CE419800BDDE9E /* Build configuration list for PBXNativeTarget "PostcardTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +431,7 @@
 				C444648119CE419800BDDE9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
